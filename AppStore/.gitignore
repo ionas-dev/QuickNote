@@ -1,0 +1,6 @@
+.build/
+
+# Generated images (rebuild with the pipeline in README.md)
+raw/
+final/
+*.png

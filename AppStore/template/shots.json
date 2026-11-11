@@ -1,0 +1,72 @@
+{
+  "locales": { "en": "en-US", "de": "de-DE" },
+  "shots": [
+    {
+      "id": "01-capture",
+      "raw": { "en": ["../raw/en/01-capture.png"], "de": ["../raw/de/01-capture.png"] },
+      "headline": { "en": "Catch it before it's gone.", "de": "Festhalten, bevor es weg ist." },
+      "accentWord": { "en": "gone", "de": "weg" },
+      "accent": "coral",
+      "tilt": -2.5
+    },
+    {
+      "id": "02-tags",
+      "raw": { "en": ["../raw/en/02-tags.png"], "de": ["../raw/de/02-tags.png"] },
+      "headline": { "en": "Sort it later with tags.", "de": "Sortier es später mit Tags." },
+      "accentWord": { "en": "later", "de": "später" },
+      "accent": "blue",
+      "tilt": 2.5
+    },
+    {
+      "id": "03-calendar",
+      "raw": { "en": ["../raw/en/03-calendar.png"], "de": ["../raw/de/03-calendar.png"] },
+      "headline": { "en": "Find it again by day or tag.", "de": "Find es wieder – nach Datum oder Tag." },
+      "accentWord": { "en": "again", "de": "wieder" },
+      "accent": "coral",
+      "tilt": -2.5
+    },
+    {
+      "id": "04-todos",
+      "raw": { "en": ["../raw/en/04-todos.png"], "de": ["../raw/de/04-todos.png"] },
+      "headline": { "en": "Turn thoughts into to-dos.", "de": "Aus Gedanken werden To-dos." },
+      "accentWord": { "en": "to-dos", "de": "To-dos" },
+      "accent": "blue",
+      "tilt": 2.5
+    },
+    {
+      "id": "05-reminders",
+      "raw": { "en": ["../raw/en/05-reminders.png"], "de": ["../raw/de/05-reminders.png"] },
+      "headline": { "en": "Send it to Reminders.", "de": "Ab damit in die Erinnerungen." },
+      "accentWord": { "en": "Reminders", "de": "Erinnerungen" },
+      "accent": "coral",
+      "tilt": -2.5
+    },
+    {
+      "id": "06-move",
+      "raw": { "en": ["../raw/en/06-move.png"], "de": ["../raw/de/06-move.png"] },
+      "headline": { "en": "Move it to the right day.", "de": "Schieb es auf den richtigen Tag." },
+      "accentWord": { "en": "right day", "de": "richtigen Tag" },
+      "accent": "blue",
+      "tilt": 2.5
+    },
+    {
+      "id": "07-untagged",
+      "raw": { "en": ["../raw/en/07-untagged.png"], "de": ["../raw/de/07-untagged.png"] },
+      "headline": { "en": "Nothing slips through.", "de": "Nichts geht verloren." },
+      "accentWord": { "en": "Nothing", "de": "Nichts" },
+      "accent": "coral",
+      "tilt": -2.5
+    },
+    {
+      "id": "08-customize",
+      "raw": {
+        "en": ["../raw/en/08a-light.png", "../raw/en/08b-dark.png"],
+        "de": ["../raw/de/08a-light.png", "../raw/de/08b-dark.png"]
+      },
+      "headline": { "en": "Make it yours.", "de": "Ganz nach deinem Stil." },
+      "accentWord": { "en": "yours", "de": "Stil" },
+      "accent": "blue",
+      "tilt": 2.5
+    }
+  ]
+}

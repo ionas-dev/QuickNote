@@ -1,0 +1,198 @@
+{
+  "fill-specializations" : [
+    {
+      "value" : "system-light"
+    },
+    {
+      "appearance" : "dark",
+      "value" : "system-dark"
+    }
+  ],
+  "groups" : [
+    {
+      "blur-material" : null,
+      "layers" : [
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "extended-srgb:1.00000,0.21961,0.23529,1.00000",
+              "display-p3:1.01470,0.45260,0.43259,1.00000"
+            ],
+            "orientation" : {
+              "start" : {
+                "x" : 0.5,
+                "y" : 0
+              },
+              "stop" : {
+                "x" : 0.5,
+                "y" : 0.7
+              }
+            }
+          },
+          "glass" : true,
+          "image-name" : "Rectangle 5.svg",
+          "name" : "Rectangle 5",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              0,
+              -383
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.7
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.3
+      }
+    },
+    {
+      "blur-material" : 0.5,
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "extended-srgb:0.00000,0.53333,1.00000,1.00000"
+          },
+          "image-name" : "Ellipse 1.svg",
+          "name" : "Ellipse 1",
+          "opacity" : 1,
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              -308.65496375,
+              -79.40398768753948
+            ]
+          }
+        }
+      ],
+      "lighting" : "individual",
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.4
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.2
+      }
+    },
+    {
+      "blur-material" : 0.5,
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "extended-srgb:0.00000,0.53333,1.00000,1.00000"
+          },
+          "glass" : true,
+          "image-name" : "Ellipse 1.svg",
+          "name" : "Ellipse 1",
+          "opacity" : 0.3,
+          "position" : {
+            "scale" : 1.5,
+            "translation-in-points" : [
+              -308.65496375,
+              -79.40398768753948
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "specular" : false,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "layers" : [
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "extended-gray:0.50000,1.00000"
+          },
+          "glass" : true,
+          "image-name" : "Line 4.svg",
+          "name" : "Line 4",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              7.001099999999951,
+              -241.0859375
+            ]
+          }
+        },
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "extended-gray:0.50000,1.00000"
+          },
+          "image-name" : "Line 3.svg",
+          "name" : "Line 3",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              16.144723750000026,
+              88.82919493808754
+            ]
+          }
+        },
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "extended-gray:0.50000,1.00000"
+          },
+          "image-name" : "Line 2.svg",
+          "name" : "Line 2",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              16.144723750000026,
+              256
+            ]
+          }
+        },
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "solid" : "extended-gray:0.50000,1.00000"
+          },
+          "image-name" : "Line 1.svg",
+          "name" : "Line 1",
+          "opacity" : 1,
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              107.08972374999996,
+              -79.40398768753948
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "specular" : false,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}

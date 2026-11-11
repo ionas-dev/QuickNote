@@ -1,0 +1,15 @@
+
+# SwiftPM
+Packages/*/.build/
+Packages/*/.swiftpm/
+
+# Internal design/plan documents (kept local, not published)
+docs/
+
+# Personal Xcode state
+xcuserdata/
+.DS_Store
+
+# Agent tooling
+.superpowers/
+.claude/worktrees/
