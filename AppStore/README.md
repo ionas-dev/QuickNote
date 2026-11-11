@@ -8,6 +8,7 @@ Everything for the App Store Connect listing (v1.0, iPhone, English + German).
 | ---------------------------------- | ------------------------------------------------------------------------------------ |
 | `texts/en-US.md`, `texts/de-DE.md` | Name, subtitle, promotional text, keywords, description, categories — paste verbatim |
 | `final/en-US/`, `final/de-DE/`     | The 8 upload-ready screenshots per language (1320 × 2868, 6.9" display)              |
+| `final/6.3-inch/<locale>/`         | The same screenshots at 1206 × 2622 for the 6.1"/6.3" display slot                    |
 | `raw/en/`, `raw/de/`               | Plain simulator captures the finals are made from (+ `.txt` accessibility dumps)     |
 | `template/shots.json`              | Headlines, accent word/colour and tilt per screenshot                                |
 | `tools/`                           | The pipeline below                                                                   |
@@ -19,7 +20,7 @@ App Store Connect → your app → version 1.0 → **iPhone 6.9" Display**:
 2. Switch the language to German and drag `final/de-DE/01…08`.
 3. Paste the text fields from `texts/`.
 
-Smaller iPhone sizes are scaled from the 6.9" set automatically.
+If App Store Connect asks for the **6.1"/6.3" display** (1206 × 2622 or 1179 × 2556), use `final/6.3-inch/<locale>/` instead. Sizes that aren't provided are scaled from the ones that are.
 
 ## Rerunning
 
@@ -44,6 +45,14 @@ AppStore/tools/simlang.sh de "$APP" && AppStore/tools/shoot.sh de
 
 # 5. Compose the finals (takes a few minutes)
 AppStore/tools/compose/.build/compose AppStore/template/shots.json AppStore/final
+
+# 6. 6.3" set: same aspect ratio, scaled down
+for loc in en-US de-DE; do
+  mkdir -p AppStore/final/6.3-inch/$loc
+  for f in AppStore/final/$loc/*.png; do
+    sips -z 2622 1206 "$f" --out AppStore/final/6.3-inch/$loc/$(basename "$f")
+  done
+done
 ```
 
 - **Change a headline:** edit `template/shots.json`, rerun step 5. The composer fails if a headline needs more than two lines.

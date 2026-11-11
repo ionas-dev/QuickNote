@@ -282,7 +282,6 @@
 				INFOPLIST_FILE = Notizblock/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = QuickNote;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "QuickNote creates calendar events from your notes.";
 				INFOPLIST_KEY_NSRemindersFullAccessUsageDescription = "QuickNote creates reminders from your notes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -331,7 +330,6 @@
 				INFOPLIST_FILE = Notizblock/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = QuickNote;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "QuickNote creates calendar events from your notes.";
 				INFOPLIST_KEY_NSRemindersFullAccessUsageDescription = "QuickNote creates reminders from your notes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;

@@ -28,22 +28,8 @@ import Observation
         DispatchQueue.main.async { self.externalChangeCount += 1 }
     }
 
-    func requestCalendarAccess() async -> Bool {
-        (try? await store.requestFullAccessToEvents()) ?? false
-    }
-
     func requestRemindersAccess() async -> Bool {
         (try? await store.requestFullAccessToReminders()) ?? false
-    }
-
-    func makeEvent(title: String, date: Date) -> EKEvent {
-        let event = EKEvent(eventStore: store)
-        event.title = title
-        event.startDate = Calendar.current.startOfDay(for: date)
-        event.endDate = Calendar.current.date(byAdding: .hour, value: 1, to: event.startDate)!
-        event.isAllDay = true
-        event.calendar = store.defaultCalendarForNewEvents
-        return event
     }
 
     @discardableResult
@@ -95,14 +81,6 @@ import Observation
         }
     }
     
-    func deleteLinkedCalendarEntry(id: String) throws {
-        guard let item = store.calendarItem(withIdentifier: id) else { return }
-       
-        if let event = item as? EKEvent {
-            try store.remove(event, span: .thisEvent)
-        }
-    }
-
     func updateLinkedRemindersEntry(id: String, title: String) throws {
         guard let item = store.calendarItem(withIdentifier: id) else { return }
 
@@ -112,14 +90,6 @@ import Observation
         }
     }
     
-    func updateLinkedCalendarEntry(id: String, title: String) throws {
-        guard let item = store.calendarItem(withIdentifier: id) else { return }
-        
-        if let event = item as? EKEvent {
-            try store.save(event, span: .thisEvent)
-        }
-    }
-
     func setReminderCompleted(id: String, completed: Bool) throws {
         guard let item = store.calendarItem(withIdentifier: id), let reminder = item as? EKReminder
         else { return }
